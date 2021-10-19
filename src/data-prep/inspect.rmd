@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 
 library(readr)
-df <- read.csv('data/listings_zurich.csv.gz')
+df <- read.csv('../../data/listings_zurich.csv.gz')
 
 ```
 
@@ -28,7 +28,7 @@ summary(df)
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
-hist(df$beds)
+hist(df$bedrooms)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
